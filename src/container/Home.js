@@ -19,7 +19,7 @@ class Home extends React.Component {
         <Link to="/product">Go to product page</Link> */}
         
         <LoginArea />
-        <LocationField />
+        <LocationField prop={this.props} />
         <SimpleMenu />
 
         <div>

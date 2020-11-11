@@ -49,7 +49,7 @@ const Initial_State = {
         {
             price: "13,167",
             title: "AIR JORDAN 1 MID",
-            imageURL : "https://www.allikestore.com/media/catalog/product/cache/1/image/830x830/9df78eab33525d08d6e5fb8d27136e95/6/4/640734-173-1_37465.jpg?__cf_chl_jschl_tk__=c7c8ee1676e4b9195f0bcc480643a6dc0fd0a9d3-1605015026-0-AZ1Sp_pAx9IcrMJ_63Zkjid9Wq4hSizbweF5uKfURnH_oiB7z2S6b7mkl7BmxT0qFsMgTeGgQH9k5xnmUMTT1umJgX-ZKTBJ6kf5WAq1ViB2694hyPZHNQJETH_0pag7oPjX51VLi_lpBfeQp728i7apVs1DcuoBGx4r8U5yoPlklvnBzjaadu0dajIZObGQf4L_6pXfaYQV0TRKs1PTKEsxilb806rBTC0JgEoEKT2A606wjFHOyhmk_ZhiGjn3tq766msde65Mpzl4akgarZ9ZRrCZs7borXk8cDtbbkw7SrhmYWoAvtUj66sfJZscarAOlUeCCMTrvnfQq7T2iQ20g6nUeVKRA10_mU8Qq-k06Bc5b3fYgwx2GbaoA-uoPn7_X_zN8qcCtzStDJyDDx4fn2Ab-d-oRQFELxLrVMSs0LLdgUouLQG9tUPoBvzOQ1mXTcLR1u4G0EpIa_sPyBU",
+            imageURL : "https://i.pinimg.com/originals/b5/70/00/b570007814cfcdce9ea771e66775f700.jpg",
         },
     ]
 }

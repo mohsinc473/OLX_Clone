@@ -11,8 +11,6 @@ import Avatar from "@material-ui/core/Avatar";
 import IconButton from "@material-ui/core/IconButton";
 import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
 
-import {useHistory} from 'react-router-dom';
-
 
 const useStyles = makeStyles({
   root: {

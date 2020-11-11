@@ -10,7 +10,8 @@ import AddIcon from '@material-ui/icons/Add';
 import AppModal from "./modal";
 
 
-export default function LocationField() {
+export default function LocationField(props) {
+  console.log("NAvbar==>",props)
   let bodCol = () => {
     document.getElementById("lock").style.borderColor = "#40e0d0";
   };
@@ -63,7 +64,7 @@ export default function LocationField() {
         
         <AppModal />
 
-        <button className="sell-btn">
+        <button className="sell-btn" onClick={()=>props.prop.history.push('/post')}>
         <AddIcon style={{ color:"#002f34",padding:"1px",fontWeight: "bold" }} />
         <p style={{ marginLeft: "2px",padding:"2px", color:"#002f34",fontSize: "14px",fontWeight: 700,letterSpacing: ".5px" }}>SELL</p>
         </button>
