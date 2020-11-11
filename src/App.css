@@ -1,38 +1,222 @@
-.App {
-  text-align: center;
+body {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.location {
   display: flex;
-  flex-direction: column;
+  background-color: rgba(0, 47, 52, 0.03);
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.box-1 {
+  background-color: #fff;
+  border: 2px solid #002f34;
+  padding: 0 8px;
+  height: 50px;
+  margin: 10px 12px;
+  border-radius: 4px;
+}
+.location:focus {
+  border-color: #40e0d0;
+}
+.loctionInput {
+  background: #fff;
+  font-size: 16px;
+  padding: 8px 5px;
+  outline: none;
+  border: none;
+}
+.product {
+  display: flex;
+  border: 2px solid #002f34;
+  padding: 0 8px;
+  height: 50px;
+  margin: 5px;
+  border-radius: 4px;
+  flex-basis: 50%;
+}
+.product input {
+  width: 100%;
+  padding: 8px 5px;
+  outline: none;
+  border: none;
+}
+.group {
+  border-radius: 4px;
+  padding: 8px 5px;
+  border-color: #002f34;
+  outline: none;
+  width: 640px;
+  height: 50px;
+  /* border: none; */
+}
+.group:focus {
+  border-color: #40e0d0;
+}
+.group + Button {
+  background-color: #002f34;
+  color: #fff;
+}
+.hov:hover {
+  background-color: #002f34;
+  color: #fff;
+}
+.login {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  text-decoration: underline;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 17px;
+  margin-left: 10px;
+  color: #002f34;
+}
+.login:hover {
+  text-decoration: none;
+  color: #002f34;
+  cursor: pointer;
+}
+.sell {
+  display: flex;
+  margin: 5px;
+}
+.sell-btn {
+  background-color: #fff;
+  display: flex;
+  border-width: 5px;
+  border-style: solid;
+  border-top-color: #40e0d0;
+  border-bottom-color: rgb(57, 135, 236);
+  border-left-color: rgb(255, 217, 0);
+  border-right-color: #002f34;
+  border-radius: 20px;
+  width: 90px;
+  height: 40px;
+  /* padding: 10px; */
+  text-align: center;
+  margin: 5px;
+  margin-left: 15px;
 }
 
-.App-link {
-  color: #61dafb;
+/* All Categories */
+.menuCat {
+  font-size: 14px;
+  color: #002f34;
+}
+.bread {
+  list-style-type: none;
+  margin-top: 5px;
+}
+.bread li {
+  display: inline-block;
+  margin-left: 20px;
+  margin-top: 7px;
+}
+.bread li a {
+  color: #002f34;
+  font-size: 14px;
+  text-decoration: none;
+}
+.bread li a:hover {
+  color: #1e94a1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Footer 2 */
+.foot2 {
+  list-style-type: none;
+  font-size: 12px;
+  color: rgba(0, 47, 52, 0.64);
+  padding-left: 0px;
+  font-weight: 400;
 }
+.foot2Ul li {
+  display: inline-block;
+}
+
+.authUi {
+  color: #002f34;
+  background-color: #fff;
+  border: 2px solid #002f34;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 700;
+  height: 48px;
+  width: 100%;
+  padding: 0 10px;
+  margin-top: 10px;
+}
+.authUi:hover {
+  border: 4px solid #002f34;
+}
+.fbLogin {
+  font-size: 12px;
+  color: rgba(0, 47, 52, 0.64);
+  font-weight: 400;
+}
+.modalFoot {
+  border-top: 1px solid rgb(219, 219, 219);
+  margin-top: 5px;
+  padding-top: 10px;
+  text-align: center;
+  font-size: 12px;
+}
+.modalEnd {
+  margin: 20px 0 0;
+  padding: 0 20px;
+  text-align: center;
+  color: rgba(0, 47, 52, 0.64);
+  font-size: 12px;
+}
+
+/* // Product  */
+
+.advertisement{
+    text-align: center;
+    margin: 80px 0px;
+}
+
+.crousal {
+  width: 100%;
+  height: 500px;
+  /* border: 2px solid red; */
+}
+
+.description {
+  margin-top: 40px;
+  padding: 12px;
+  background: #fff;
+  border: 1px solid #002f34;
+  border-radius: 4px;
+}
+.description h3 {
+  font-weight: 700;
+  font-size: 20px;
+  padding-bottom: 10px;
+  color: #002f34;
+}
+.description p {
+  color: #002f34;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 10px;
+}
+.price{
+    width: 100%;
+    background: #fff;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border: 1px solid #002f34;
+  /* border: 1px solid rgba(0,47,52,.2); */
+    border-radius: 4px;
+}
+.price h3{
+    font-weight: 700;
+    /* margin-bottom: 8px; */
+    color: #002f34;
+    font-size: 34px;
+}
+.price p{
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(0,47,52,.64);
+    line-height: 24px;
+    word-break: break-word;
+}   
