@@ -22,22 +22,16 @@ function MyVerticallyCenteredModal(props) {
 
       <Modal.Body>
         <button className="authUi" 
-        onClick={()=> {
-          if(props.prop.facebookLogin() == true){
-
-          }
-        }}
-
+        onClick={()=> {props.prop.facebookLogin()}}
         >
-          
           <span className="fbLogin">
             <FacebookIcon />
           </span>
           Continue with facebook
         </button>
-        <button className="authUi" onClick={()=> props.prop.facebookLogin()}>
+        {/* <button className="authUi" onClick={()=> props.prop.facebookLogin()}>
           Continue with google
-        </button>
+        </button> */}
       </Modal.Body>
 
       <div className="modalFoot">
@@ -60,7 +54,7 @@ function AppModal(props) {
   return (
     <>
       <a className="login" id="loginTag" onClick={() => setModalShow(true)}>
-        {/* {props.prop.currentUser.length > 0 ? <LoginArea /> : "Login"} */}
+        {/* {props.prop.currentUser ? <LoginArea /> : "Login"} */}
         Login
       </a>
       

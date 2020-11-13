@@ -15,28 +15,28 @@ function SimpleContainer(props) {
       <Container maxWidth="lg">
         {/* <Typography component="div" style={{ backgroundColor: '#cfe8fc', height: '100vh' }} /> */}
         <Grid container spacing={0}>
-        <Grid item xs={3}>
+        <Grid item xs={12} md={6} lg={3}>
         <MediaCard prop={props} cardData={props.card[0]}/>
         </Grid>
-        <Grid item xs={3}>
+        <Grid item xs={12} md={6} lg={3}>
         <MediaCard prop={props} cardData={props.card[1]}/>
         </Grid>
-        <Grid item xs={3}>
+        <Grid item xs={12} md={6} lg={3}>
         <MediaCard prop={props} cardData={props.card[2]}/>
         </Grid>
-        <Grid item xs={3}>
+        <Grid item xs={12} md={6} lg={3}>
         <MediaCard prop={props} cardData={props.card[3]}/>
         </Grid>
-        <Grid item xs={3}>
+        <Grid item xs={12} md={6} lg={3}>
         <MediaCard prop={props} cardData={props.card[4]}/>
         </Grid>
-        <Grid item xs={3}>
+        <Grid item xs={12} md={6} lg={3}>
         <MediaCard prop={props} cardData={props.card[5]}/>
         </Grid>
-        <Grid item xs={3}>
+        <Grid item xs={12} md={6} lg={3}>
         <MediaCard prop={props} cardData={props.card[6]}/>
         </Grid>
-        <Grid item xs={3}>
+        <Grid item xs={12} md={6} lg={3}>
         <MediaCard prop={props} cardData={props.card[7]}/>
         </Grid>
       </Grid>

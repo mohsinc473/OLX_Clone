@@ -31,7 +31,8 @@ export default function LocationField(props) {
         <SearchIcon fontSize="large" />
         <input
           className="loctionInput"
-          type="search"
+          type="text"
+          value="Pakistan"
           onFocus={() => bodCol()}
           onBlur={() => bodNorm()}
         ></input>

@@ -18,7 +18,7 @@ class Home extends React.Component {
         {/* <h1>Home Component</h1>
         <Link to="/product">Go to product page</Link> */}
         
-        <LoginArea />
+        {/* <LoginArea /> */}
         <LocationField prop={this.props} />
         <SimpleMenu />
 
