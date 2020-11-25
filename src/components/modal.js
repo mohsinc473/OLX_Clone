@@ -2,7 +2,6 @@ import React from "react";
 import { Modal } from "react-bootstrap";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import "../App.css";
-import LoginArea from "./loginarea"
 
 import { connect } from "react-redux";
 import {facebookLogin} from "../store/action/funcs"
@@ -54,11 +53,9 @@ function AppModal(props) {
   return (
     <>
       <a className="login" id="loginTag" onClick={() => setModalShow(true)}>
-        {/* {props.prop.currentUser ? <LoginArea /> : "Login"} */}
         Login
       </a>
       
-
       <MyVerticallyCenteredModal
         prop={props}
         show={modalShow}
@@ -68,14 +65,9 @@ function AppModal(props) {
   );
 }
 
-const mapStateToProps = (state) => ({
-  // users: state.users,
-  currentUser: state.currentUser,
-});
-
 const mapDispatchToProps = (dispatch) => ({
   facebookLogin: ()=> dispatch(facebookLogin())
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(AppModal);
+export default connect(null, mapDispatchToProps)(AppModal);
 

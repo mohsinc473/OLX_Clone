@@ -10,15 +10,11 @@ import Advertisement from "../Images/advertise.PNG"
 
 import Carousel from "react-bootstrap/Carousel";
 
-import { Link } from "react-router-dom";
-
 class ProductPage extends React.Component {
   render() {
     console.log("Product==>",this.props)
     return (
       <div>
-        {/* <h1>Product Page</h1>
-        <Link to="/">Go to home page</Link> */}
 
         <LocationField />
         <SimpleMenu />

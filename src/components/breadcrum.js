@@ -20,7 +20,7 @@ export default function SimpleMenu() {
     <div style={{ display: "flex", height: "20px" }}>
       <div style={{ marginLeft: "185px", marginTop: "5px" }}>
         <Button
-          endIcon={<BsChevronDown style={{width:"24px",height:"24px",}} />}
+          endIcon={<BsChevronDown style={{ width: "24px", height: "24px" }} />}
           style={{
             fontWeight: 700,
             fontSize: "14px",
@@ -333,7 +333,7 @@ export default function SimpleMenu() {
                 <span className="menuCat">Houses</span>
               </MenuItem>
             </div>
-            
+
             <div style={{ marginLeft: "100px" }}>
               <MenuItem
                 style={{
@@ -367,8 +367,8 @@ export default function SimpleMenu() {
           </div>
         </Menu>
       </div>
-      
-       {/* BREAD */}
+
+      {/* BREAD */}
       <div>
         <ul className="bread">
           <li>

@@ -9,8 +9,11 @@ import Logo from "../Images/logo.png"
 import AddIcon from '@material-ui/icons/Add';
 import AppModal from "./modal";
 
+import LoginArea from './loginarea'
+import { connect } from "react-redux";
 
-export default function LocationField(props) {
+
+function LocationField(props) {
   console.log("NAvbar==>",props)
   let bodCol = () => {
     document.getElementById("lock").style.borderColor = "#40e0d0";
@@ -28,7 +31,7 @@ export default function LocationField(props) {
       </div>
 
       <div className="box-1" id="lock">
-        <SearchIcon fontSize="large" />
+        <SearchIcon  style={{fontSize:"30px",marginTop:"5px"}} />
         <input
           className="loctionInput"
           type="text"
@@ -51,8 +54,8 @@ export default function LocationField(props) {
         </button>
       </div> */}
 
-      <div style={{ margin: "2px" }}>
-        <ButtonGroup variant="text" className="hov">
+      <div style={{ margin: "2px",height:"45px",width:"550px",display:"flex"}}>
+        <ButtonGroup variant="text" className="hov" style={{width:"100%"}} >
           <input className="group" type="text" placeholder="Find Cars, Mobile Phones and more..." ></input>
           <Button>
             <SearchIcon fontSize="large" />
@@ -62,10 +65,14 @@ export default function LocationField(props) {
 
       <div className="sell">
         {/* <a className="login" href="#">Login</a> */}
-        
-        <AppModal />
+        {props.currentUser && props.currentUser.length > 0 ? <LoginArea avatar={props.currentUser[0].avatar} /> : <AppModal />}
+        {/* <AppModal /> */}
 
-        <button className="sell-btn" onClick={()=>props.prop.history.push('/post')}>
+        <button 
+        className="sell-btn" 
+        onClick={()=>props.prop.history.push('/post')}
+        >
+
         <AddIcon style={{ color:"#002f34",padding:"1px",fontWeight: "bold" }} />
         <p style={{ marginLeft: "2px",padding:"2px", color:"#002f34",fontSize: "14px",fontWeight: 700,letterSpacing: ".5px" }}>SELL</p>
         </button>
@@ -75,3 +82,11 @@ export default function LocationField(props) {
 
   );
 }
+
+
+const mapStateToProps = (state) => ({
+  // users: state.users,
+  currentUser: state.currentUser,
+});
+
+export default connect(mapStateToProps, null)(LocationField);

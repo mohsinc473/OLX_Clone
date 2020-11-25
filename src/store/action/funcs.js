@@ -1,6 +1,6 @@
-import firebase from '../../config/firebase';
 import React from "react";
-import LoginArea from "../../components/loginarea"
+import firebase from '../../config/firebase';
+
 
 const facebookLogin = () => {
   return (dispatch) => {
@@ -20,16 +20,10 @@ const facebookLogin = () => {
         }
         firebase.database().ref('/').child(`users/${user.uid}`).set(userNode)
         .then(() => {
-            alert("Login Succesful");
+            // alert("Login Succesful");
             dispatch({type:"Auth",data:userNode})
-
-            // let login = document.getElementById("loginTag");
-            // console.log(login);
-            // login.innerHTML = <LoginArea avatr={user.photoURL} />
-
         })
 
-        // console.log("fbUser==>", userNode);  
       })
       .catch(function (error) {
         var errorCode = error.code;

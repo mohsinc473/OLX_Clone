@@ -1,6 +1,4 @@
 import React from "react";
-import { connect } from "react-redux";
-import {Link} from "react-router-dom";
 import LocationField from "../components/navbar";
 import SimpleContainer from "../components/grid";
 import image from "../Images/hero_bg_pk.jpg";
@@ -15,8 +13,6 @@ class Home extends React.Component {
       console.log("Home Props==> ",this.props)
     return (
       <div>
-        {/* <h1>Home Component</h1>
-        <Link to="/product">Go to product page</Link> */}
         
         {/* <LoginArea /> */}
         <LocationField prop={this.props} />
@@ -46,8 +42,4 @@ class Home extends React.Component {
   }
 }
 
-const mapStateToProps = () => ({
-  name: "mohsin",
-});
-
-export default connect(mapStateToProps, null)(Home);
+export default Home;
